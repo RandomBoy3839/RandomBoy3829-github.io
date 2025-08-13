@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Japanese | Hiragana, Katakana & Kanji</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#" data-lang-key="site_title">Learn Japanese</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hiragana" data-lang-key="nav_hiragana">Hiragana</a></li>
+                    <li><a href="#katakana" data-lang-key="nav_katakana">Katakana</a></li>
+                    <li><a href="#kanji" data-lang-key="nav_kanji">Kanji</a></li>
+                    <li><a href="#quiz" data-lang-key="nav_quiz">Quiz</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <label for="lang-select" class="sr-only">Choose Language</label>
+                <select id="lang-select">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="hi">हिन्दी</option>
+                    </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="hero">
+            <div class="container">
+                <h1 data-lang-key="hero_title">Your Ultimate Journey to Japanese Mastery</h1>
+                <p data-lang-key="hero_subtitle">Start with the basics. Practice pronunciation. Master the characters.</p>
+                <a href="#hiragana" class="cta-button" data-lang-key="hero_button">Let's Begin</a>
+            </div>
+        </section>
+
+        <section id="hiragana" class="learning-section">
+            <div class="container">
+                <h2 data-lang-key="hiragana_title">Hiragana Chart (ひらがな)</h2>
+                <p class="section-description" data-lang-key="hiragana_desc">Click on any character to hear its pronunciation.</p>
+                <div class="char-grid">
+                    <button class="char-card" data-sound="sounds/hiragana/a.mp3"><span>あ</span><p>a</p></button>
+                    <button class="char-card" data-sound="sounds/hiragana/i.mp3"><span>い</span><p>i</p></button>
+                    <button class="char-card" data-sound="sounds/hiragana/u.mp3"><span>う</span><p>u</p></button>
+                    <button class="char-card" data-sound="sounds/hiragana/e.mp3"><span>え</span><p>e</p></button>
+                    <button class="char-card" data-sound="sounds/hiragana/o.mp3"><span>お</span><p>o</p></button>
+                    <button class="char-card" data-sound="sounds/hiragana/ka.mp3"><span>か</span><p>ka</p></button>
+                    <button class="char-card" data-sound="sounds/hiragana/ki.mp3"><span>き</span><p>ki</p></button>
+                    <button class="char-card" data-sound="sounds/hiragana/ku.mp3"><span>く</span><p>ku</p></button>
+                    <button class="char-card" data-sound="sounds/hiragana/ke.mp3"><span>け</span><p>ke</p></button>
+                    <button class="char-card" data-sound="sounds/hiragana/ko.mp3"><span>こ</span><p>ko</p></button>
+                    <div class="char-card placeholder"><span>さ</span><p>sa</p></div>
+                    <div class="char-card placeholder"><span>し</span><p>shi</p></div>
+                    <div class="char-card placeholder"><span>...</span><p>etc.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="katakana" class="learning-section">
+            <div class="container">
+                <h2 data-lang-key="katakana_title">Katakana Chart (カタカナ)</h2>
+                <p class="section-description" data-lang-key="katakana_desc">Used for foreign words, names, and emphasis.</p>
+                <div class="char-grid">
+                    <button class="char-card" data-sound="sounds/katakana/a.mp3"><span>ア</span><p>a</p></button>
+                    <button class="char-card" data-sound="sounds/katakana/i.mp3"><span>イ</span><p>i</p></button>
+                    <button class="char-card" data-sound="sounds/katakana/u.mp3"><span>ウ</span><p>u</p></button>
+                    <button class="char-card" data-sound="sounds/katakana/e.mp3"><span>エ</span><p>e</p></button>
+                    <button class="char-card" data-sound="sounds/katakana/o.mp3"><span>オ</span><p>o</p></button>
+                    <button class="char-card" data-sound="sounds/katakana/ka.mp3"><span>カ</span><p>ka</p></button>
+                    <button class="char-card" data-sound="sounds/katakana/ki.mp3"><span>キ</span><p>ki</p></button>
+                    <button class="char-card" data-sound="sounds/katakana/ku.mp3"><span>ク</span><p>ku</p></button>
+                    <button class="char-card" data-sound="sounds/katakana/ke.mp3"><span>ケ</span><p>ke</p></button>
+                    <button class="char-card" data-sound="sounds/katakana/ko.mp3"><span>コ</span><p>ko</p></button>
+                    <div class="char-card placeholder"><span>サ</span><p>sa</p></div>
+                    <div class="char-card placeholder"><span>シ</span><p>shi</p></div>
+                    <div class="char-card placeholder"><span>...</span><p>etc.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kanji" class="learning-section">
+            <div class="container">
+                <h2 data-lang-key="kanji_title">100 Basic Kanji (漢字)</h2>
+                <p class="section-description" data-lang-key="kanji_desc">The building blocks of written Japanese.</p>
+                <div class="kanji-grid">
+                    <article class="kanji-card">
+                        <div class="kanji-char-container">
+                            <h3 class="kanji-character">日</h3>
+                        </div>
+                        <div class="kanji-details">
+                            <p class="kanji-meaning" data-lang-key="kanji_day">Meaning: Day, Sun, Japan</p>
+                            <p class="kanji-reading"><strong>On'yomi:</strong> ニチ (nichi), ジツ (jitsu)</p>
+                            <p class="kanji-reading"><strong>Kun'yomi:</strong> ひ (hi), -び (-bi), -か (-ka)</p>
+                        </div>
+                    </article>
+                    <article class="kanji-card">
+                        <div class="kanji-char-container">
+                            <h3 class="kanji-character">一</h3>
+                        </div>
+                        <div class="kanji-details">
+                            <p class="kanji-meaning" data-lang-key="kanji_one">Meaning: One</p>
+                            <p class="kanji-reading"><strong>On'yomi:</strong> イチ (ichi), イツ (itsu)</p>
+                            <p class="kanji-reading"><strong>Kun'yomi:</strong> ひと (hito), ひと(つ) (hito(tsu))</p>
+                        </div>
+                    </article>
+                     <article class="kanji-card">
+                        <div class="kanji-char-container">
+                            <h3 class="kanji-character">人</h3>
+                        </div>
+                        <div class="kanji-details">
+                            <p class="kanji-meaning" data-lang-key="kanji_person">Meaning: Person</p>
+                            <p class="kanji-reading"><strong>On'yomi:</strong> ジン (jin), ニン (nin)</p>
+                            <p class="kanji-reading"><strong>Kun'yomi:</strong> ひと (hito)</p>
+                        </div>
+                    </article>
+                    </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="quiz-section">
+            <div class="container">
+                <h2 data-lang-key="quiz_title">Test Your Knowledge</h2>
+                <div id="quiz-container">
+                    <p data-lang-key="quiz_desc">Ready to check your skills? Choose a quiz to start.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-button" data-quiz-type="hiragana" data-lang-key="quiz_btn_hira">Hiragana Quiz</button>
+                        <button class="quiz-button" data-quiz-type="katakana" data-lang-key="quiz_btn_kata">Katakana Quiz</button>
+                    </div>
+                </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="watermark">Learn Japanese Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
